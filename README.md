@@ -43,3 +43,26 @@ Ya tienes Git y GitHub configurados. Ahora puedes elegir crear un repositorio en
   - La bifurcación de un repositorio te permitirá realizar cambios en otro repositorio sin afectar al original.
   - Cada repositorio de GitHub le pertenece a una persona u organización. Puedes interactuar con las personas, repositorios y organizaciones conectándote y siguiéndolos en GitHub.
   - GitHub tiene una excelente comunidad de soporte técnico en la que puedes pedir ayuda y hablar con los usuarios de todo el mundo. 
+
+
+<h3>Configurar SSH en la Terminal</h3>
+1. Buscar en la terminal con el comando which ssh-keygen, esta es la ubicación exacta de ssh-keygen.
+2. Pon el comando nano ~/.zshrc_profile, te mandará a una ventana e ingresarás el comando export PATH="aqui-pon-la-ubicacion-que-buscaste-primero:$PATH".
+Para guardar ese cambio con las teclas ctrl + x y te pregunta si quieres salir y guardar cambios, para guardar pulsas la tecla Y (yes); te regresa a la terminal.
+3. Ingresa el comando source ~/.zshrc_profile
+4. Para generar una llave escribe: ssh-keygen -t rsa -b 4096 -C "correoelectronico@gmail.com"
+  ssh-keygen es el comando para generar la llave
+  -t significa el tipo de llave 
+  rsa es un algoritmo
+  -b significa el tamaño en bits de la llave, en este caso es de 4096
+  -C es comentario que se le va agregar a la llave 
+
+<h4>Sacar la llave a GitHub</h4>
+1. Para copiar la llave, en la terminal utiliza el comando pbcopy <~/.ssh/id_rsa.pub
+2. Ingresa a GitHub
+3. Ingresa Settings 
+4. SSH and GPG keys 
+5. New SSH key
+6. Ingresa un nombre 
+7. Pega la llave
+
