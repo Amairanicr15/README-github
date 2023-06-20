@@ -32,18 +32,27 @@ Aquí se aloja ese código y sus cambios en un servidor en la nube, así como ve
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>Instalar Git en macOS</h3>
-Para instalar Git en macOS simplemente es necesario descargar un instalador binario. La dirección del instalador la puedes obtener desde la página de descargas de Git para macOS.
+Git es el responsable de todo lo relacionado con GitHub que ocurra localmente en el equipo, por ello es necesario descargar, instalar y configurar Git en tu equipo.  
+Para instalar Git en macOS simplemente es necesario descargar un instalador binario. La dirección del instalador la puedes obtener desde la página de descargas de Git para macOS.  
 
+Redirigete al sitio de descarga del instalador. Debes hacer click en el botón Download para iniciar la descarga. Instale la versión  más reciente de Git. 
 
-Redirigete al sitio de descarga del instalador 
+Una vez la descarga concluya es necesario ejecutar el instalador y seguir los pasos del asitente para terminar la instalación.
 
 
 <h3>Configurar Git</h3>
-Git es el responsable de todo lo relacionado con GitHub que ocurra localmente en el equipo, por ello es necesario descargar, instalar y configurar Git en tu equipo. 
+Ahora que tienes Git en tu sistema, vas a querer hacer algunas cosas para personalizar tu entorno de Git. Es necesario hacer estas cosas solamente una vez en tu computadora, y se mantendrán entre actualizaciones. También puedes cambiarlas en cualquier momento volviendo a ejecutar los comandos correspondientes.
 
-1. Descargue e instale la versión  más reciente de Git.
-2. Establece el nombre de usuario en Git.
-3. Establece la dirección de correo electrónico de confirmación en Git.
+1. Utiliza la terminal e ingresa el comando *git config* 
+2. Establece el nombre de usuario en Git, con el comando *git config --global user.name "Lai Doe"* 
+3. Establece la dirección de correo electrónico de confirmación en Git, con el comando *git config --global user.email laidoe@gmail.com*
+
+Ahora que tu identidad esta configurada, puedes elegir el editor de texto por defecto que se utilizará cuando Git necesite que introduzcas un mensaje. Si no se indica nada, Git usará el editor por defecto de tu sistema, que generalmente es Vim. 
+
+<h4>Comprobando tu configuración</h4>  
+Usa el comando *git config --list*
+
+También puedes comprobar el valor que Git utilizará para una clave específica ejecutando *git config <key>*
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>Autenticación con GitHub desde Git</h3>
