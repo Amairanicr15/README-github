@@ -20,4 +20,15 @@ Aquí se aloja ese código y sus cambios en un servidor en la nube, así como ve
 
 
 <h3>Configurar Git</h3>
-Git es el responsable de todo lo relacionado con GitHub que ocurra localmente en el equipo.
+Git es el responsable de todo lo relacionado con GitHub que ocurra localmente en el equipo, por ello es necesario descargar, instalar y configurar Git en tu equipo. 
+
+1. Descargue e instale la versión  más reciente de Git.
+2. Establece el nombre de usuario en Git.
+3. Establece la dirección de correo electrónico de confirmación en Git.
+
+<h3>Autenticación con GitHub desde Git</h3>
+Cuando te conectes a un repositorio de GitHub desde Git, deberás autenticarte con GitHub mediante HTTPS o SSH.
+  * Nota: puede autenticarse en GitHub mediante el GitHub CLI, ya sea para HTTP o SSH
+
+
+
