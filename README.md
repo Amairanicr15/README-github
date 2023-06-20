@@ -34,7 +34,6 @@ Aquí se aloja ese código y sus cambios en un servidor en la nube, así como ve
 <h3>Instalar Git en macOS</h3>
 Git es el responsable de todo lo relacionado con GitHub que ocurra localmente en el equipo, por ello es necesario descargar, instalar y configurar Git en tu equipo.  
 Para instalar Git en macOS simplemente es necesario descargar un instalador binario. La dirección del instalador la puedes obtener desde la página de descargas de Git para macOS.  
-
 Redirigete al sitio de descarga del instalador. Debes hacer click en el botón Download para iniciar la descarga. Instale la versión  más reciente de Git. 
 
 Una vez la descarga concluya es necesario ejecutar el instalador y seguir los pasos del asitente para terminar la instalación.
